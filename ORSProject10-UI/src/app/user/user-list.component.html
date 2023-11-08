@@ -36,7 +36,7 @@ background-size: cover;width:auto;
           <input type="text" class="form-control" [(ngModel)]="form.searchParams.loginId" placeholder="{{'Search Email' | translate}}">
         </div> -->
         <div class="col-sm-2">
-
+<!-- preload -->
           <select class="form-control" name="roleId" [(ngModel)]="form.searchParams.roleId" aria-label="ngSelected">
             <option [ngValue]="" value="undefined">{{' Select Role' | translate }}</option>
             <option *ngFor="let obj of form.preload.roleList" [value]="obj.key">{{obj.value}}</option>
